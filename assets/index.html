@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <meta charset="utf-8">
+  
+	<title>Formulario de Datos</title>
+</head>
+<body>
+
+<style type="text/css">
+	*{
+		margin:0px;
+		padding:0px;
+	}
+ 
+ body {
+        background: url(fondo.jpeg);
+        background-position: center;
+ } 
+
+ form {
+ 	background: #FF5733;
+ 	width: 360px;
+ 	border: 1px solid #4e4d4d;
+ 	border-radius: 3px;
+ 	-moz -border-radius: 3px;
+ 	-webkit-border-radius:3px;
+ 	box-shadow: inset 0 0 10px #000;
+ 	margin: 100px auto;
+ }
+   form h1 {
+   	  text-align: center;
+   	  color:#fff;
+   	  font-weight: normal;
+   	  font-size:40pt;
+      margin: 30px 0px;
+      font-family: "Pinyon script", cursive;
+   }
+
+   form li {
+
+   	   text-align: center;
+   	   list-style: none;
+   }
+
+   form input{
+   	width: 280px;
+   	height: 35px;
+   	padding: 0px 10px;
+   	color: #6d6d6d;
+   	font-size:15px;
+   	font-family: "Pinyon script", arial;
+   	text-align: center;
+   	border-radius: 3px;
+   }
+   
+   form button{
+
+   	width: 280px;
+   	margin: 20px 30px 30px 40px;
+    height: 50px;
+   	color: #6d6d6d;
+    border:1px  solid #232323;
+    color: #fff;
+    box-shadow: 0px 2px 0px #000;
+    -moz-box-shadow:0px 2px 0px #000;
+    -webkit-box-shadow:0px 2px 0px #000;;
+    font-size: 20px;
+    font-family: "Pinyon script", cursive;
+    border-radius: 3px;
+	text-align:center;
+
+
+   }
+    
+     form label {
+
+    font-size: 18px;
+    font-family: "Pinyon script", verdana;
+    color:#fff;
+    text-align: center;
+     }
+
+
+
+</style>
+
+<form action="">
+
+
+	<h1>Formulario de Datos</h1>
+
+	<li><label for= "nombre">Nombre<br></label>
+	<input id= "campo1" type="text" placeholder = "Ingrese Nombre" required></li><br>
+	
+	<li><label for= "apellido">Apellido<br></label>
+	<input id= "campo2" type="text" placeholder = "Ingrese Apellido" required></li><br>
+	
+	<li><label for= "telefono">Telefono<br></label>
+	<input id= "campo3" type="tel" name= "telefono" pattern="[0-9]{9}" placeholder = "Introduce tu teléfono con los 9 dígitos" required></li><br>
+
+    <li><label>Escoge tu carro para poder continuar</label><br></b>
+        
+        <select>
+            <option selected value="0"> Elige tu carro</option>
+            <option value='1'>Chevrolet</option>
+            <option value='2'>Jack</option>
+            <option value='3'>Mazda</option>
+            <option value='4'>Kia</option>
+        </select>
+     
+
+
+
+	<li><label for= "email">Email<br></label>
+	<input id= "campo4" type="email"  name= "email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder = "Ingrese su email" required></li><br>
+	
+	<li><label for= "password">Contraseña <br></label>
+	<input id= "campo5" type="password" name= "password" pattern=".{6,}" placeholder = "Ingrese contraseña" required></li><br>
+    
+     <button  input id="campo6" type="button">Enviar</button>
+
+     
+</form>
+
+
+
+<script src="js/main.js"</script>
+
+</body>
+</html>
